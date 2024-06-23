@@ -1,0 +1,12 @@
+name: "[Main] Terraform Apply or Destroy Branch Main"
+run-name: User ${{ github.actor }} is applying or destroying terraform on branch ${{ github.ref }}
+on:
+  push:
+    branches:    
+      - main
+jobs:
+  call-workflow-passing-data:
+    uses: paulosobral/amp-02-infra-reusable/.github/workflows/simple-infra-02-apply-destroy-terraform.yml@v1.0.0
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
