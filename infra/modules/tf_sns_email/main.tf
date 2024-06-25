@@ -13,7 +13,6 @@ data "template_file" "cloudformation_sns_stack" {
   vars = {
     display_name    = var.display_name
     email_address_1 = var.email_address_1
-    email_address_2 = var.email_address_2
     protocol        = var.protocol
   }
 }
