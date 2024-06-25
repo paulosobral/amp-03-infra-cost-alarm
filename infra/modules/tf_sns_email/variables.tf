@@ -15,11 +15,6 @@ variable "email_address_1" {
   description = "Email address to send notifications to"
 }
 
-variable "email_address_2" {
-  type        = string
-  description = "Email address to send notifications to"
-}
-
 variable "owner" {
   type        = string
   description = "Sets the owner tag on the CloudFormation stack"
