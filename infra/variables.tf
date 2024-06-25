@@ -68,10 +68,5 @@ variable "sns_topic_name" {
 
 variable "email_address_1" {
   type    = string
-  default = "xxx@yyyy.com"
-}
-
-variable "email_address_2" {
-  type    = string
-  default = "xxx@yyyy.com"
+  default = "suporte@asmelhorespousadas.com.br"
 }

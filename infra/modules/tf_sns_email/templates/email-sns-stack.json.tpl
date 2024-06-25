@@ -10,10 +10,6 @@
           {
            "Endpoint" : "${email_address_1}",
            "Protocol" : "${protocol}"
-          },
-          {
-           "Endpoint" : "${email_address_2}",
-           "Protocol" : "${protocol}"
           }
         ]
       }
